@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.apps.lorenzofailla.votrac.SessionDetails">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn___session_details___delete_session"
+        android:layout_alignParentStart="false"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn___session_details___export_session"
+        android:layout_alignBottom="@+id/btn___session_details___delete_session"
+        android:layout_toEndOf="@+id/btn___session_details___delete_session"
+        android:src="@android:drawable/ic_menu_save"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn___session_details___recalculate"
+        android:layout_alignBottom="@+id/btn___session_details___delete_session"
+        android:layout_toEndOf="@+id/btn___session_details___export_session"
+        android:src="@android:drawable/ic_menu_rotate"
+        android:visibility="visible" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab___session_details___showinmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_mapmode" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_placeholder"
+                android:id="@+id/txv___session_details___session_date"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_placeholder"
+                    android:id="@+id/txv___session_details___session_time"
+                    android:layout_below="@+id/txv___session_details___session_date"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance_placeholder"
+                    android:id="@+id/txv___session_details___session_distance"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/text_size_numerical_values_sessions_list"
+                    android:layout_alignBottom="@+id/txv___session_details___session_time"
+                    android:layout_toRightOf="@+id/txv___session_details___session_date" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance_unit_km"
+                    android:id="@+id/txv___session_details___session_distance_um"
+                    android:layout_alignParentTop="false"
+                    android:layout_toEndOf="@+id/txv___session_details___session_distance"
+                    android:textSize="@dimen/text_size_units"
+                    android:layout_alignTop="@+id/txv___session_details___session_distance" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration_placeholder"
+                    android:id="@+id/txv___session_details___session_duration"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_size_numerical_values_sessions_list"
+                    android:layout_toRightOf="@+id/txv___session_details___session_distance_um"
+                    android:layout_alignBottom="@+id/txv___session_details___session_distance" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_details__other_session_data"
+            android:id="@+id/txv___session_details___other_data"
+            android:layout_below="@+id/txv___session_details___session_time"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_details__n_of_samples"
+            android:id="@+id/txv___session_details___number_of_samples"
+            android:layout_below="@+id/txv___session_details___other_data"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_details__id_of_session"
+            android:id="@+id/txv___session_details___session_id"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" />
+
+        <com.apps.lorenzofailla.vocalpacer.ChartView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cht___session_details___speed_v_time"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

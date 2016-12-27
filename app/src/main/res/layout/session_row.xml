@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_placeholder"
+        android:id="@+id/txv__session_row__session_date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_placeholder"
+        android:id="@+id/txv__session_row__session_time"
+        android:layout_below="@+id/txv__session_row__session_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_placeholder"
+        android:id="@+id/txv__session_row__session_distance"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/text_size_numerical_values_sessions_list"
+        android:layout_alignBottom="@+id/txv__session_row__session_time"
+        android:layout_toRightOf="@+id/txv__session_row__session_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_unit_km"
+        android:id="@+id/txv__session_row__session_distance_um"
+        android:layout_alignParentTop="false"
+        android:layout_toEndOf="@+id/txv__session_row__session_distance"
+        android:textSize="@dimen/text_size_units"
+        android:layout_alignTop="@+id/txv__session_row__session_distance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duration_placeholder"
+        android:id="@+id/txv__session_row__session_duration"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/text_size_numerical_values_sessions_list"
+        android:layout_toRightOf="@+id/txv__session_row__session_distance_um"
+        android:layout_alignBottom="@+id/txv__session_row__session_distance" />
+</RelativeLayout>

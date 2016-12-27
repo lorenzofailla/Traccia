@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="pref_default__advise_on_time_base">true</bool>
+    <bool name="pref_default__advise_on_distance_base">true</bool>
+    <bool name="pref_default__advise_distance_on_time_base">true</bool>
+    <bool name="pref_default__advise_time_on_distance_base">true</bool>
+    <bool name="pref_default__advise_remaining_time_on_time_base">true</bool>
+    <bool name="pref_default__advise_finish_distance_on_time_base">true</bool>
+    <bool name="pref_default__advise_remaining_time_on_distance_base">true</bool>
+    <bool name="pref_default__advise_finish_distance_on_distance_base">true</bool>
+    <bool name="pref_default__use_session_duration">true</bool>
+    <bool name="pref_default__approximate_distance_to_quarters_of_km">true</bool>
+    <bool name="pref_default__use_target_distance">true</bool>
+    <bool name="pref_default__advise_target_distance_fulfilment_on_time_base">true</bool>
+    <bool name="pref_default__advise_target_distance_fulfilment_on_distance_base">true</bool>
+    <bool name="pref_default__advise_on_pace_change">true</bool>
+
+    <integer name="pref_default__distance_interval">250</integer> <!-- valore da esprimere in metri -->
+    <integer name="pref_default__time_interval">300</integer> <!-- valore da esprimere in secondi -->
+    <integer name="pref_default__target_duration">3600</integer> <!-- valore da esprimere in secondi -->
+    <integer name="pref_default__target_distance">5000</integer> <!-- valore da esprimere in secondi -->
+
+</resources>
